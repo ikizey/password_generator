@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <h1>This is a password generator</h1>
+
+    <div>
+        <p>lower case passwords:</p>
+        <ul>
+            {% for password in pass_list.0 %}
+            <li>{{ password }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div>
+        <p>lower+upper case passwords:</p>
+        <ul>
+            {% for password in pass_list.1 %}
+            <li>{{ password }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div>
+        <p>numeric passswords:</p>
+        <ul>
+            {% for password in pass_list.2 %}
+            <li>{{ password }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div>
+        <p>alpha numeric passswords:</p>
+        <ul>
+            {% for password in pass_list.3 %}
+            <li>{{ password }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+
+</body>
+
+</html>
